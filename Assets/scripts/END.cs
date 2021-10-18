@@ -7,7 +7,7 @@ public class END : MonoBehaviour
 {
    private void OnTriggerEnter2D(Collider2D collision)
    {
-       if(collision.gameObject.name == "player" && Score.scoreValue >= 150)
+       if(collision.gameObject.name == "player" ) //&& Score.scoreValue >= 150
        {
            CompleteLevel();
        }
